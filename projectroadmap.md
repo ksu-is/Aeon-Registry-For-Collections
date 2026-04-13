@@ -9,7 +9,9 @@
 - [X] Document findings from Kasmya: I also realized that the code would not run properly because it was looking for a specific username and password which is accociated with the creator of this system / repository. 
       
 ## Sprint 2: Core Development
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ]Database Schema Design: Write the SQL script to create the collections table for specific fields. 
+- [ ] Database Connection: Create a database.py file to establish connection between Python and MySQL.
+- [ ] Basic GUI Shell: Set up the main Tkinter window with placeholder labels for "Specimen Name" and "Category."
+- [ ] Input Functionality: Program the "Submit" button to print the input field data to the console (Terminal).
+- [ ] Data Insertion: Write the Python logic to INSERT the user-inputted nature findings into the MySQL database.
+- [ ] Search/View Feature: Implement a basic search function to query the database by specific categories.
