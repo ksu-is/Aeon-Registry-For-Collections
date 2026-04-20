@@ -6,7 +6,7 @@ def get_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="your_password", 
+        password="73838", 
         database="aeon_registry"
     )
 
