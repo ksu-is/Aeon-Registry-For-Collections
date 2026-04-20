@@ -21,7 +21,7 @@ class AeonRegistryApp:
 
         # Button to Save
         self.submit_btn = tk.Button(root, text="Register Finding", command=self.save_data, 
-                                    fg="white", 
+                                    fg="#1b5e20", 
                                     highlightbackground="#27ae60", # This creates the green color on Mac
                                     font=("Arial", 11, "bold"),
                                     pady=10)
