@@ -20,6 +20,8 @@
 - [X] Matched password function in database.py with SQL workbench to run smoothly when promoted.
 - [X] Set up initial TKinter GUI Layout and implement data insertion logic.
 - [X] Ran code in new terminal, SQL window with data selection pulled up succsessfully.
+- [X] Added green coloring to register finding button to make more visible.
+- [X] Added another category box for specific item type.
 
 
 
