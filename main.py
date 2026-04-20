@@ -21,7 +21,7 @@ class AeonRegistryApp:
 
         # Button to Save
         tk.Button(root, text="Register Finding", command=self.save_data, 
-                  bg="green", fg="white", font=("Arial", 10, "bold")).pack(pady=20)
+                  bg="#27ae60", fg="white", font=("Arial", 10, "bold")).pack(pady=20)
 
     def create_input(self, label_text, var_name):
         tk.Label(self.root, text=label_text).pack()
