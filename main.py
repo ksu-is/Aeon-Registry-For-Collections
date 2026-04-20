@@ -20,8 +20,12 @@ class AeonRegistryApp:
         self.details_entry.pack(pady=5)
 
         # Button to Save
-        tk.Button(root, text="Register Finding", command=self.save_data, 
-                  bg="#27ae60", fg="white", font=("Arial", 10, "bold")).pack(pady=20)
+        self.submit_btn = tk.Button(root, text="Register Finding", command=self.save_data, 
+                                    fg="white", 
+                                    highlightbackground="#27ae60", # This creates the green color on Mac
+                                    font=("Arial", 11, "bold"),
+                                    pady=10)
+        self.submit_btn.pack(pady=20)
 
     def create_input(self, label_text, var_name):
         tk.Label(self.root, text=label_text).pack()
