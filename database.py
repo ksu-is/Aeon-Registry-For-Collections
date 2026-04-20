@@ -31,7 +31,7 @@ def insert_specimen(name, sci, loc, details):
     """Saves a new finding into the database."""
     conn = get_connection()
     cursor = conn.cursor()
-    query = "INSERT INTO specimens (common_name, scientific_name, location, details) VALUES (%s, %s, %s, %s)"
+    query = "INSERT INTO specimens (common_name, scientific_name, Category, location, details) VALUES (%s, %s, %s, %s, %s)"
     cursor.execute(query, (name, sci, loc, details))
     conn.commit()
     conn.close()

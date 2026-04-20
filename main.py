@@ -14,6 +14,7 @@ class AeonRegistryApp:
         self.create_input("Common Name (e.g. Crow Feather):", "name")
         self.create_input("Scientific Name:", "sci")
         self.create_input("Location Found:", "loc")
+        self.create_input("Specimen Type (e.g. Bird, Plant):", "cat")
 
         tk.Label(root, text="Additional Details:").pack()
         self.details_entry = tk.Text(root, height=5, width=35)
@@ -37,6 +38,7 @@ class AeonRegistryApp:
         # Get data from the UI
         name = self.name_input.get()
         sci = self.sci_input.get()
+        cat = self.cat_input.get()
         loc = self.loc_input.get()
         details = self.details_entry.get("1.0", tk.END).strip()
 
@@ -45,7 +47,7 @@ class AeonRegistryApp:
             return
 
         try:
-            database.insert_specimen(name, sci, loc, details)
+            database.insert_specimen(name, sci, cat, loc, details)
             messagebox.showinfo("Success", f"'{name}' recorded in the registry!")
             self.clear_fields()
         except Exception as e:
@@ -54,6 +56,7 @@ class AeonRegistryApp:
     def clear_fields(self):
         self.name_input.delete(0, tk.END)
         self.sci_input.delete(0, tk.END)
+        self.cat_input.delete(0, tk.END)
         self.loc_input.delete(0, tk.END)
         self.details_entry.delete("1.0", tk.END)
 
